@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254E5D12A680E5D80381E1F5 /* Pods_datastructuresportfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4807BCC837AA587F0FAA5883 /* Pods_datastructuresportfolio.framework */; };
 		D783D6EA24169A560015766B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6E924169A560015766B /* AppDelegate.swift */; };
 		D783D6EC24169A560015766B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6EB24169A560015766B /* SceneDelegate.swift */; };
 		D783D6EE24169A560015766B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6ED24169A560015766B /* ViewController.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4807BCC837AA587F0FAA5883 /* Pods_datastructuresportfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_datastructuresportfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A07D99374C24592EFE2A6 /* Pods-datastructuresportfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datastructuresportfolio.debug.xcconfig"; path = "Target Support Files/Pods-datastructuresportfolio/Pods-datastructuresportfolio.debug.xcconfig"; sourceTree = "<group>"; };
 		D783D6E624169A560015766B /* datastructuresportfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datastructuresportfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D783D6E924169A560015766B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D783D6EB24169A560015766B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		D783D70724169A5C0015766B /* datastructuresportfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = datastructuresportfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D783D70B24169A5C0015766B /* datastructuresportfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datastructuresportfolioUITests.swift; sourceTree = "<group>"; };
 		D783D70D24169A5C0015766B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC2EF6F817209F437CD6C3BE /* Pods-datastructuresportfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datastructuresportfolio.release.xcconfig"; path = "Target Support Files/Pods-datastructuresportfolio/Pods-datastructuresportfolio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254E5D12A680E5D80381E1F5 /* Pods_datastructuresportfolio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42F7AB5813A8A9213A689886 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				494A07D99374C24592EFE2A6 /* Pods-datastructuresportfolio.debug.xcconfig */,
+				DC2EF6F817209F437CD6C3BE /* Pods-datastructuresportfolio.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D783D6DD24169A560015766B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,8 @@
 				D783D6FF24169A5C0015766B /* datastructuresportfolioTests */,
 				D783D70A24169A5C0015766B /* datastructuresportfolioUITests */,
 				D783D6E724169A560015766B /* Products */,
+				42F7AB5813A8A9213A689886 /* Pods */,
+				F0F0993DFEE0E08D0A145DD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,14 @@
 			path = datastructuresportfolioUITests;
 			sourceTree = "<group>";
 		};
+		F0F0993DFEE0E08D0A145DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4807BCC837AA587F0FAA5883 /* Pods_datastructuresportfolio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D783D71024169A5C0015766B /* Build configuration list for PBXNativeTarget "datastructuresportfolio" */;
 			buildPhases = (
+				AE0F6BBA1ADAD3B4592B5181 /* [CP] Check Pods Manifest.lock */,
 				D783D6E224169A560015766B /* Sources */,
 				D783D6E324169A560015766B /* Frameworks */,
 				D783D6E424169A560015766B /* Resources */,
+				40C23AABD5A984A084BD73C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40C23AABD5A984A084BD73C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-datastructuresportfolio/Pods-datastructuresportfolio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-datastructuresportfolio/Pods-datastructuresportfolio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-datastructuresportfolio/Pods-datastructuresportfolio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0F6BBA1ADAD3B4592B5181 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-datastructuresportfolio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D783D6E224169A560015766B /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		D783D71124169A5C0015766B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494A07D99374C24592EFE2A6 /* Pods-datastructuresportfolio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +519,7 @@
 		};
 		D783D71224169A5C0015766B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC2EF6F817209F437CD6C3BE /* Pods-datastructuresportfolio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
