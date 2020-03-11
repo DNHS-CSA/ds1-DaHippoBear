@@ -3,14 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		254E5D12A680E5D80381E1F5 /* Pods_datastructuresportfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4807BCC837AA587F0FAA5883 /* Pods_datastructuresportfolio.framework */; };
+		D7666D5C24193A560037CA11 /* pythag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7666D5B24193A560037CA11 /* pythag.storyboard */; };
+		D7666D5F24193B640037CA11 /* triboi.png in Resources */ = {isa = PBXBuildFile; fileRef = D7666D5E24193B640037CA11 /* triboi.png */; };
 		D783D6EA24169A560015766B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6E924169A560015766B /* AppDelegate.swift */; };
 		D783D6EC24169A560015766B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6EB24169A560015766B /* SceneDelegate.swift */; };
-		D783D6EE24169A560015766B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6ED24169A560015766B /* ViewController.swift */; };
+		D783D6EE24169A560015766B /* pythag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6ED24169A560015766B /* pythag.swift */; };
 		D783D6F124169A560015766B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D783D6EF24169A560015766B /* Main.storyboard */; };
 		D783D6F324169A5B0015766B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D783D6F224169A5B0015766B /* Assets.xcassets */; };
 		D783D6F624169A5B0015766B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D783D6F424169A5B0015766B /* LaunchScreen.storyboard */; };
@@ -38,10 +40,12 @@
 /* Begin PBXFileReference section */
 		4807BCC837AA587F0FAA5883 /* Pods_datastructuresportfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_datastructuresportfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A07D99374C24592EFE2A6 /* Pods-datastructuresportfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datastructuresportfolio.debug.xcconfig"; path = "Target Support Files/Pods-datastructuresportfolio/Pods-datastructuresportfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		D7666D5B24193A560037CA11 /* pythag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = pythag.storyboard; sourceTree = "<group>"; };
+		D7666D5E24193B640037CA11 /* triboi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboi.png; sourceTree = "<group>"; };
 		D783D6E624169A560015766B /* datastructuresportfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datastructuresportfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D783D6E924169A560015766B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D783D6EB24169A560015766B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D783D6ED24169A560015766B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D783D6ED24169A560015766B /* pythag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pythag.swift; sourceTree = "<group>"; };
 		D783D6F024169A560015766B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D783D6F224169A5B0015766B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D783D6F524169A5B0015766B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,13 +91,30 @@
 				494A07D99374C24592EFE2A6 /* Pods-datastructuresportfolio.debug.xcconfig */,
 				DC2EF6F817209F437CD6C3BE /* Pods-datastructuresportfolio.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7666D5A24193A0B0037CA11 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				D783D6EF24169A560015766B /* Main.storyboard */,
+				D7666D5B24193A560037CA11 /* pythag.storyboard */,
+			);
+			path = VIEWS;
+			sourceTree = "<group>";
+		};
+		D7666D5D24193B540037CA11 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D7666D5E24193B640037CA11 /* triboi.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		D783D6DD24169A560015766B = {
 			isa = PBXGroup;
 			children = (
+				D7666D5D24193B540037CA11 /* images */,
 				D783D6E824169A560015766B /* datastructuresportfolio */,
 				D783D6FF24169A5C0015766B /* datastructuresportfolioTests */,
 				D783D70A24169A5C0015766B /* datastructuresportfolioUITests */,
@@ -118,8 +139,8 @@
 			children = (
 				D783D6E924169A560015766B /* AppDelegate.swift */,
 				D783D6EB24169A560015766B /* SceneDelegate.swift */,
-				D783D6ED24169A560015766B /* ViewController.swift */,
-				D783D6EF24169A560015766B /* Main.storyboard */,
+				D783D6ED24169A560015766B /* pythag.swift */,
+				D7666D5A24193A0B0037CA11 /* VIEWS */,
 				D783D6F224169A5B0015766B /* Assets.xcassets */,
 				D783D6F424169A5B0015766B /* LaunchScreen.storyboard */,
 				D783D6F724169A5B0015766B /* Info.plist */,
@@ -260,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D783D6F624169A5B0015766B /* LaunchScreen.storyboard in Resources */,
+				D7666D5F24193B640037CA11 /* triboi.png in Resources */,
+				D7666D5C24193A560037CA11 /* pythag.storyboard in Resources */,
 				D783D6F324169A5B0015766B /* Assets.xcassets in Resources */,
 				D783D6F124169A560015766B /* Main.storyboard in Resources */,
 			);
@@ -328,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D783D6EE24169A560015766B /* ViewController.swift in Sources */,
+				D783D6EE24169A560015766B /* pythag.swift in Sources */,
 				D783D6EA24169A560015766B /* AppDelegate.swift in Sources */,
 				D783D6EC24169A560015766B /* SceneDelegate.swift in Sources */,
 			);
