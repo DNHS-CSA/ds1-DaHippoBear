@@ -10,6 +10,9 @@
 		254E5D12A680E5D80381E1F5 /* Pods_datastructuresportfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4807BCC837AA587F0FAA5883 /* Pods_datastructuresportfolio.framework */; };
 		D7666D5C24193A560037CA11 /* pythag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7666D5B24193A560037CA11 /* pythag.storyboard */; };
 		D7666D5F24193B640037CA11 /* triboi.png in Resources */ = {isa = PBXBuildFile; fileRef = D7666D5E24193B640037CA11 /* triboi.png */; };
+		D76ED464241A8B5000CB2267 /* ftocconverter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76ED463241A8B5000CB2267 /* ftocconverter.storyboard */; };
+		D76ED466241A8C5B00CB2267 /* therm.png in Resources */ = {isa = PBXBuildFile; fileRef = D76ED465241A8C5B00CB2267 /* therm.png */; };
+		D76ED468241A8E2200CB2267 /* ftoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76ED467241A8E2200CB2267 /* ftoc.swift */; };
 		D783D6EA24169A560015766B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6E924169A560015766B /* AppDelegate.swift */; };
 		D783D6EC24169A560015766B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6EB24169A560015766B /* SceneDelegate.swift */; };
 		D783D6EE24169A560015766B /* pythag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D6ED24169A560015766B /* pythag.swift */; };
@@ -42,6 +45,9 @@
 		494A07D99374C24592EFE2A6 /* Pods-datastructuresportfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datastructuresportfolio.debug.xcconfig"; path = "Target Support Files/Pods-datastructuresportfolio/Pods-datastructuresportfolio.debug.xcconfig"; sourceTree = "<group>"; };
 		D7666D5B24193A560037CA11 /* pythag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = pythag.storyboard; sourceTree = "<group>"; };
 		D7666D5E24193B640037CA11 /* triboi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboi.png; sourceTree = "<group>"; };
+		D76ED463241A8B5000CB2267 /* ftocconverter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ftocconverter.storyboard; sourceTree = "<group>"; };
+		D76ED465241A8C5B00CB2267 /* therm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = therm.png; sourceTree = "<group>"; };
+		D76ED467241A8E2200CB2267 /* ftoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ftoc.swift; sourceTree = "<group>"; };
 		D783D6E624169A560015766B /* datastructuresportfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datastructuresportfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D783D6E924169A560015766B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D783D6EB24169A560015766B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 			children = (
 				D783D6EF24169A560015766B /* Main.storyboard */,
 				D7666D5B24193A560037CA11 /* pythag.storyboard */,
+				D76ED463241A8B5000CB2267 /* ftocconverter.storyboard */,
 			);
 			path = VIEWS;
 			sourceTree = "<group>";
@@ -106,6 +113,7 @@
 		D7666D5D24193B540037CA11 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D76ED465241A8C5B00CB2267 /* therm.png */,
 				D7666D5E24193B640037CA11 /* triboi.png */,
 			);
 			path = images;
@@ -140,6 +148,7 @@
 				D783D6E924169A560015766B /* AppDelegate.swift */,
 				D783D6EB24169A560015766B /* SceneDelegate.swift */,
 				D783D6ED24169A560015766B /* pythag.swift */,
+				D76ED467241A8E2200CB2267 /* ftoc.swift */,
 				D7666D5A24193A0B0037CA11 /* VIEWS */,
 				D783D6F224169A5B0015766B /* Assets.xcassets */,
 				D783D6F424169A5B0015766B /* LaunchScreen.storyboard */,
@@ -283,8 +292,10 @@
 				D783D6F624169A5B0015766B /* LaunchScreen.storyboard in Resources */,
 				D7666D5F24193B640037CA11 /* triboi.png in Resources */,
 				D7666D5C24193A560037CA11 /* pythag.storyboard in Resources */,
+				D76ED466241A8C5B00CB2267 /* therm.png in Resources */,
 				D783D6F324169A5B0015766B /* Assets.xcassets in Resources */,
 				D783D6F124169A560015766B /* Main.storyboard in Resources */,
+				D76ED464241A8B5000CB2267 /* ftocconverter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D783D6EE24169A560015766B /* pythag.swift in Sources */,
+				D76ED468241A8E2200CB2267 /* ftoc.swift in Sources */,
 				D783D6EA24169A560015766B /* AppDelegate.swift in Sources */,
 				D783D6EC24169A560015766B /* SceneDelegate.swift in Sources */,
 			);
