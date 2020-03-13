@@ -6,16 +6,22 @@ class TempConverterController: UIViewController {
     @IBOutlet weak var celsius: UILabel!
     @IBOutlet weak var fahrenheit: UILabel!
     @IBOutlet weak var kelvin: UILabel!
+   
     var inputidentifier = 0
-    
+    let display = (1, false, "bruh")
+ //tuple above
+   //allows you to choose your input type, changes this value as you click the button which allows you to execute different functions
     // Loads at initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Initialize Outlets
-        celsius.text = "Celsius Output"
-        fahrenheit.text = "Fahrenheit Output"
-        kelvin.text = "Kelvin Output"
+        celsius.text = "Celsius"
+        fahrenheit.text = "Fahrenheit"
+        kelvin.text = "Kelvin"
+        print(display.0)
+        print(display.1)
+        print(display.2)
     }
 
     // IBAction created with Drag from Storyboard
@@ -69,15 +75,20 @@ class TempConverterController: UIViewController {
    }
 
   @IBAction func calculate(sender: UIButton) {
-   
+   //the following code tests the var inputidentifier and executes different tasks based on that
     if (inputidentifier == 1) {
         let inputf = Float(input.text!)
         let celsiusv = (inputf!-32) * (5/9)
         let kelvinv = celsiusv + 273
         celsius.text = String(celsiusv)
-        
         kelvin.text = String(kelvinv)
         fahrenheit.text = String(inputf!)
+        //following tests if input is too high, and outputs tuple if it is
+        if (inputf! > 100000) {
+            celsius.text = (display.2)
+                   kelvin.text = (display.2)
+                   fahrenheit.text = (display.2)
+        }
        
         
     }
@@ -89,6 +100,11 @@ class TempConverterController: UIViewController {
            celsius.text = String(inputc!)
            kelvin.text = String(kelvinv)
            fahrenheit.text = String(fahr)
+        if (inputc! > 100000) {
+                  celsius.text = (display.2)
+                         kelvin.text = (display.2)
+                         fahrenheit.text = (display.2)
+              }
           
            
        }
@@ -100,7 +116,11 @@ class TempConverterController: UIViewController {
            celsius.text = String(celsiusv)
            kelvin.text = String(inputk!)
            fahrenheit.text = String(fahr)
-          
+          if (inputk! > 100000) {
+                    celsius.text = (display.2)
+                           kelvin.text = (display.2)
+                           fahrenheit.text = (display.2)
+                }
            
        }
        // let is for values that are not modified
