@@ -10,7 +10,7 @@
         <!--Pythag Controller-->
         <scene sceneID="5aE-dD-EoC">
             <objects>
-                <viewController id="R5E-ox-qeP" customClass="PythagController" customModule="datastructuresportfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R5E-ox-qeP" customClass="PythagController" customModule="datastructuresportfolio" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wEl-ce-Hfn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
